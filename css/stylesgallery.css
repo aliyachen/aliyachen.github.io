@@ -227,6 +227,7 @@ html, body {
 
 /* The Close Button */
 .close {
+  z-index: 100;
   color: white;
   position: absolute;
   top: 10px;
