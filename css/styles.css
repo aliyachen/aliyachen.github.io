@@ -141,7 +141,7 @@ li.dropdown {
     float: left;
     margin-left: 18%;
     margin-top: 13%;
-    height: 32%;
+    height: 30vh;
     padding: 0 3vw; 
 }
 
@@ -157,7 +157,8 @@ li.dropdown {
     animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1}
 } 
 .aboutsection {
-    margin-left: 25%;
+    margin-left: 25vh;
+    padding-left: 0vw;
     width: 100%;
 }
 h1.aboutsection {
@@ -167,10 +168,12 @@ h1.aboutsection {
     
 }
 p.aboutsection {
-    width: 60vw;
+    width: auto;
     font-size: 1.9vh;
-    line-height: 1.8em;
+    line-height: 3vh;
+    margin-right: 7vw;
 }
+
 
 /*links at bottom*/
 .links {
