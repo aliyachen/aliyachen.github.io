@@ -165,18 +165,17 @@ html, body {
 .visdev {
     float: left;
     margin: auto;
-    margin-left: 28%;
+    margin-left: 13%;
     display: block;
     cursor: pointer;
-    transition: 0.3s;
-    width: 50%;
     height: auto;
+    transition: 0.3s;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 /*modal*/
-.viscontainer {padding:0.01em 16px}
+.viscontainer {padding:0.01em 8vw}
 .w3-modal {
     z-index:100;
     display:none;
