@@ -1,56 +1,72 @@
 html {
     padding: 0px;
 }
+
 /*navigation sidebar*/
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
+
 #home {
     display: block;
     margin: auto;
-    width: 40%;
-    margin-top: 190px;
+    width: 45%;
+    margin-top: 22vh;
     padding-bottom: 0px;
 }
 .navcontainer {
-    margin-top: 40px;
+    margin-top: 4vh;
 }
 #nav {
-    margin: 0px;
-    padding: 0px;
     text-align: center;
-    font-size: 13px;
+    font-size: 1vw;
     width: 13%;
     height: 100%;
     position: fixed;
+    margin: 0px;
+    padding-left: 0px;
     background-color: #26292d;
-    min-height: 600px;
     overflow: auto;
     z-index: 1;
 }
 .dropitems {
-    margin-left: -40px;
     display: none;
-    padding-left: 0px;
+    text-align: center;
+    position: relative;
+    width: 100%; 
 }
 li {
     list-style-type: none;
     position: relative;
+    display: inline; 
+    text-align: center; 
+}
+ul li {
+    position: relative;
+    display: inline-block;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
+    width: 100%;
     overflow: hidden;
+    float: left; 
+    text-align: center;
 }
-li a, .dropbtn {
+
+li a, .dropbtn { 
     display: inline-block;
-     font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: lightgrey;
-    padding: 8px 40px;
+    padding: 0.6vw 0vw;
     text-decoration: none;
+    width: 100%;
+    
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: darkgrey;
@@ -68,14 +84,14 @@ li.dropdown {
 .links {
     margin: auto;
     position: fixed;
-    bottom: 30px;
+    bottom: 2vh;
     z-index: 2;
     width: 13%;
     text-align: center;
 }
 .links img {
-    height: 25px;
-    padding: 10px; 
+    height: 4vh;
+    padding: 1vh; 
     margin: auto;
 }
 .links img.darkableImage {
