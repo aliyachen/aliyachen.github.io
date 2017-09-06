@@ -1,0 +1,143 @@
+html {
+    padding: 0px;
+}
+/*navigation sidebar*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+#home {
+    display: block;
+    margin: auto;
+    width: 40%;
+    margin-top: 190px;
+    padding-bottom: 0px;
+}
+.navcontainer {
+    margin-top: 40px;
+}
+#nav {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 13px;
+    width: 13%;
+    height: 100%;
+    position: fixed;
+    background-color: #26292d;
+    min-height: 600px;
+    overflow: auto;
+    z-index: 1;
+}
+.dropitems {
+    margin-left: -40px;
+    display: none;
+    padding-left: 0px;
+}
+li {
+    list-style-type: none;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+li a, .dropbtn {
+    display: inline-block;
+     font-family: 'Lato', sans-serif;
+    color: lightgrey;
+    padding: 8px 40px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    color: darkgrey;
+}
+li.dropdown {
+    display: inline-block;
+     font-family: 'Lato', sans-serif;
+    color: darkgrey;
+    text-decoration: none;
+    display: block; 
+}
+
+
+/*links at bottom*/
+.links {
+    margin: auto;
+    position: fixed;
+    bottom: 30px;
+    z-index: 2;
+    width: 13%;
+    text-align: center;
+}
+.links img {
+    height: 25px;
+    padding: 10px; 
+    margin: auto;
+}
+.links img.darkableImage {
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+
+/*contact*/
+h3 {
+    margin-top: 50px;
+    float: left;
+    width: 50%;
+    margin-left: 31.5%;
+    margin-bottom: 10px;
+}
+input[type=text], select, textarea {
+    float: left;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+     float: left;
+    background-color: #26292d;
+    color: white;
+    padding: 12px 48%;
+    text-align: center;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #3d3d3d;
+}
+
+.messagebox {
+    height: 150px;
+}
+.container {
+    padding: 0;
+    width: 50%;
+    float: left;
+    margin-left: 31.5%; 
+}
+.fade {
+        animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1}
+}
+
+/*code*/
+h2 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    float: left;
+    margin-top: 270px;
+    margin-left: 13%;
+    text-align: center;
+    width: 87%;
+}

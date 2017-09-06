@@ -1,0 +1,129 @@
+<!DOCTTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aliya Chen | Illustration</title>
+   <link rel="stylesheet" href="css/stylesgallery.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!--fade in-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#gallery').fadeIn(300);
+    });
+</script>
+   
+ <!--menu slide down-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function() {
+    $("#dropdownitems").click(function(){
+      $(".dropitems").slideToggle();
+    });
+});
+</script>
+    
+<!--lightbox-->
+    <script>
+function onClick(element) {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+    
+</head>
+<nav>
+<ul id="nav">
+    <a href="index.html#top">
+        <img src="images/home.png" alt="Home Button" id="home">
+    </a>
+    <div class="navcontainer">
+    <li><a href="index.html#about">About</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" id="dropdownitems">Art</a>
+        <ul>
+            <li class="dropitems"><a href="illustration.html">Illustration</a></li>
+            <li class="dropitems"><a href="design.html">Design</a></li>
+            <li class="dropitems"><a href="visdev.html">Visdev</a></li>
+        </ul>
+    </li>
+    <li><a href="code.html">Code</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </div>
+</ul>
+    
+<div class="links">
+        <a target="_blank" href="http://rokashii.tumblr.com/"><img src="images/tumblr.png" alt="tumblr" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
+        <a target="_blank" href="https://www.artstation.com/artist/aliyachen"><img src="images/artstation.png" alt="Artstation" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
+        <a target="_blank" href="https://www.linkedin.com/in/aliya-chen-b97960119/"><img src="images/linkedin.png" alt="LinkedIn" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
+</div>
+</nav> 
+<body>
+    <div id="gallery">
+        <div class="w3-container viscontainer visdev">
+            <img src="images/design/met.png" style="width:100%;cursor:pointer;" onclick="onClick(this);currentSlide(1)">
+        </div>
+        <div class="w3-container viscontainer visdev">
+            <img src="images/design/book.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
+        </div>
+        <div class="w3-container viscontainer visdev">
+            <img src="images/design/card.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
+        </div>
+    </div>
+
+    
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="modal-content w3-animate-zoom">
+       <div class="mySlides">
+            <img src="images/design/met.png" style="width:100%;margin-top:6%">
+        </div>
+        <div class="mySlides">
+            <img src="images/design/book.png" style="height:100%">
+        </div>
+       <div class="mySlides">
+            <img src="images/design/card.jpg" style="height:100%">
+        </div>
+    </div>
+</div>    
+</body>
+</html>
