@@ -13,12 +13,12 @@ html, body {
 #home {
     display: block;
     margin: auto;
-    width: 45%;
-    margin-top: 22vh;
+    width: 55%;
+    margin-top: 24vh;
     padding-bottom: 0px;
 }
 .navcontainer {
-    margin-top: 4vh;
+    margin-top: 3vh;
 }
 #nav {
     text-align: center;
@@ -90,7 +90,7 @@ li.dropdown {
     text-align: center;
 }
 .links img {
-    height: 4vh;
+    height: 3vh;
     padding: 1vh; 
     margin: auto;
 }
