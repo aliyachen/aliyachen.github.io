@@ -79,7 +79,7 @@ html, body {
 }
 #nav {
     text-align: center;
-    font-size: 1.7vh;
+    font-size: 1vw;
     width: 13%;
     height: 100%;
     position: fixed;
@@ -142,7 +142,7 @@ li.dropdown {
     margin-left: 18%;
     margin-top: 13%;
     height: 32%;
-    padding: 0 2vw; 
+    padding: 0 3vw; 
 }
 
 .wrap {
