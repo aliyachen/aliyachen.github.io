@@ -11,7 +11,6 @@
 
 .bgimage {
     background-image: url(attackresize.png);
-    width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -45,7 +44,7 @@ header {
     z-index: 3;
     float: left;
     text-align: center;
-    margin-top: 270px;
+    margin-top: 40vh;
     margin-left: 13%;
     color: white;
     line-height: 2px;
@@ -53,10 +52,10 @@ header {
     width: 87%;
 }
 .myname{
-    font-size: 80px;
+    font-size: 6vw; /*80px*/
 }
 .subtitle{
-    font-size: 30px;
+    font-size: 3vw; /*30px*/
 }
 
 
@@ -65,51 +64,62 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
+
 #home {
     display: block;
     margin: auto;
     width: 40%;
-    margin-top: 190px;
+    margin-top: 15vw;
     padding-bottom: 0px;
 }
 .navcontainer {
-    margin-top: 40px;
+    margin-top: 2vw;
 }
 #nav {
     text-align: center;
-    font-size: 13px;
+    font-size: 1vw;
     width: 13%;
     height: 100%;
     position: fixed;
     margin: 0px;
     padding-left: 0px;
     background-color: #26292d;
-    min-height: 600px;
     overflow: auto;
     z-index: 1;
 }
 .dropitems {
-    margin-left: -40px;
     display: none;
     padding-left: 0px;
+    text-align: center;
+    position: relative;
 }
 li {
     list-style-type: none;
     position: relative;
+    display: inline; 
+    text-align: center; 
+}
+ul li {
+    position: relative;
+    display: inline-block;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
     overflow: hidden;
+    float: left; 
 }
 li a, .dropbtn { 
     display: inline-block;
     font-family: 'Lato', sans-serif;
     color: lightgrey;
-    padding: 8px 40px;
+    padding: 0.8vw 4vw;
     text-decoration: none;
+    
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: darkgrey;
@@ -125,29 +135,33 @@ li.dropdown {
 /*about section*/
 #sig {
     float: left;
-    margin-left: 25%;
+    margin-left: 18%;
     margin-top: 13%;
-    height: 260px;
+    height: 32%;
 }
 
 .wrap {
+   width: 100%;
     background: white;
     opacity: 0.85;
     display: block;
     position: absolute;
-    margin-top: 800px;
+    margin-top: 100vh;
     height: 100%;
     animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1}
 } 
 .aboutsection {
-    margin-left: 520px;
-    margin-right: 270px;
+    margin-left: 30%;
+    width: 100%;
 }
 h1.aboutsection {
-    margin-top: 200px;
-    font-size: 200%;
+    margin-top: 14%;
+    font-size: 2vw;
+    width:auto;
 }
 p.aboutsection {
+    width: 60vw;
+    font-size: 1.9vh;
     line-height: 1.8em;
 }
 
@@ -155,14 +169,14 @@ p.aboutsection {
 .links {
     margin: auto;
     position: fixed;
-    bottom: 30px;
+    bottom: 1.5vh;
     z-index: 2;
     width: 13%;
     text-align: center;
 }
 .links img {
-    height: 25px;
-    padding: 10px; 
+    height: 3vh;
+    padding: 1vh; 
     margin: auto;
 }
 .links img.darkableImage {
