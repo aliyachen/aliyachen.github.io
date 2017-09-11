@@ -168,9 +168,11 @@ p1 {
     margin-top: 1vh;
     padding: 0.5vh; 
     width: 100%;
+    font-size: 1.9vh;
 }
-#container {
-    float: left;
-    text-align:center;
-    width: 100%;
+.first {
+    margin-top: 8vh;
+}
+.last {
+    margin-bottom: 15vh;
 }
