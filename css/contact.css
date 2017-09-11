@@ -153,3 +153,24 @@ h2 {
     text-align: center;
     width: 87%;
 }
+
+/*music*/
+audio {
+    float: left;
+    margin: auto;
+    padding: 0.5vw;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 5vh;
+}
+p1 {
+    float: left;
+    margin-top: 1vh;
+    padding: 0.5vh; 
+    width: 100%;
+}
+#container {
+    float: left;
+    text-align:center;
+    width: 100%;
+}
