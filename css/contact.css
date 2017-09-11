@@ -38,15 +38,11 @@ html, body {
     position: relative;
     width: 100%; 
 }
-li {
+ul li {
     list-style-type: none;
     position: relative;
     display: inline; 
     text-align: center; 
-}
-ul li {
-    position: relative;
-    display: inline-block;
 }
 
 ul {
