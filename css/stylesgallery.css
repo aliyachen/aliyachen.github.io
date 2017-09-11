@@ -10,7 +10,7 @@ html, body {
     display: block;
     margin: auto;
     width: 55%;
-    margin-top: 24vh;
+    margin-top: 22vh;
     padding-bottom: 0px;
 }
 .navcontainer {
@@ -58,7 +58,7 @@ li a, .dropbtn {
     display: inline-block;
     font-family: 'Lato', sans-serif;
     color: lightgrey;
-    padding: 0.6vw 0vw;
+    padding: 0.5vw 0vw;
     text-decoration: none;
     width: 100%;
     
