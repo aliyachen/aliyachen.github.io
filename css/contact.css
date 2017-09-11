@@ -155,6 +155,9 @@ h2 {
 }
 
 /*music*/
+#page {
+    display: none;
+}
 audio {
     float: left;
     margin: auto;
