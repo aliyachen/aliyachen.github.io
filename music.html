@@ -8,36 +8,7 @@
    <link rel="stylesheet" href="css/contact.css">
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-<!--fade in-->
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#page').fadeIn(500);
-    });
-</script>
-<script>
-        
-<!--play one audio file at a time-->
-    document.addEventListener('play', function(e){
-    var audios = document.getElementsByTagName('audio');
-    for(var i = 0, len = audios.length; i < len;i++){
-        if(audios[i] != e.target){
-            audios[i].currentTime = 0;
-            audios[i].pause();
-        }
-    }
-}, true);
-    </script>                                                  
    
- <!--menu slide down-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-    $(function() {
-    $("#dropdownitems").click(function(){
-      $(".dropitems").slideToggle();
-    });
-});
-</script>
 </head>
 <nav>
 <ul id="nav">
@@ -130,5 +101,34 @@
       </div>
    
       
-  </body>
+  </body>\
+    <!--fade in-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#page').fadeIn(500);
+    });
+</script>
+<script>
+        
+<!--play one audio file at a time-->
+    document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].currentTime = 0;
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>                                                  
+   
+ <!--menu slide down-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function() {
+    $("#dropdownitems").click(function(){
+      $(".dropitems").slideToggle();
+    });
+});
+</script>
 </html>
