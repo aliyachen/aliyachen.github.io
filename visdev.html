@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     
 </head>
 <nav>
@@ -34,7 +34,7 @@
 </ul>
     
 <div class="links">
-        <a target="_blank" href="http://rokashii.tumblr.com/"><img src="images/tumblr.png" alt="tumblr" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+       <a target="_blank" href="http://rokashii.tumblr.com/"><img src="images/tumblr.png" alt="tumblr" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
         <a target="_blank" href="https://www.artstation.com/artist/aliyachen"><img src="images/artstation.png" alt="Artstation" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
@@ -97,7 +97,9 @@
     </div>
 </div>   
 </body>
-   <!--fade in-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!--fade in-->
 <script type="text/javascript">
     $(document).ready(function(){
         $('#gallery').fadeIn(300);
@@ -118,6 +120,7 @@
     <script>
 function onClick(element) {
   $("#myModal").fadeIn(300);
+}
 
 function closeModal() {
   $("#myModal").fadeOut(300);
@@ -136,8 +139,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("mySlides");
+  var slides =  $(".mySlides");
+  var dots = $(".mySlides");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
