@@ -129,7 +129,7 @@
     <script>
 function onClick(element) {
   $("#myModal").fadeIn(300);
-
+}
 function closeModal() {
   $("#myModal").fadeOut(300);
 }
@@ -147,8 +147,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("mySlides");
+  var slides =  $(".mySlides");
+  var dots = $(".mySlides");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
