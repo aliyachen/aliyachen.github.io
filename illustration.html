@@ -6,8 +6,6 @@
    <title>Aliya Chen | Illustration</title>
    <link rel="stylesheet" href="css/stylesgallery.css">
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
 
     
     
@@ -116,7 +114,7 @@
     
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <div class="modal-content w3-animate-zoom">
+    <div class="modal-content">
         <div class="mySlides">
             <img src="images/illustration/armsresize.png" class="slide" style="max-width:100vw; max-height:100vh; height:auto; width:auto;">
         </div>
@@ -183,8 +181,10 @@
     </div>
 </div>    
 </body>
-   
-   <!--fade in-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!--fade in-->
 <script type="text/javascript">
     $(document).ready(function(){
         $('#gallery').fadeIn(300);
@@ -204,10 +204,11 @@
 <!--lightbox-->
     <script>
 function onClick(element) {
-  $("#myModal").fadeIn(300);
+   $("#myModal").fadeIn(300);
+}
 
 function closeModal() {
-  $("#myModal").fadeOut(300);
+    $("#myModal").fadeOut(300);
 }
 
 var slideIndex = 1;
@@ -223,8 +224,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("mySlides");
+  var slides =  $(".mySlides");
+  var dots = $(".mySlides");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
