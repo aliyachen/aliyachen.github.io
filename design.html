@@ -128,11 +128,10 @@
 <!--lightbox-->
     <script>
 function onClick(element) {
-  document.getElementById("myModal").style.display = "block";
-}
+  $("#myModal").fadeIn(300);
 
 function closeModal() {
-  document.getElementById('myModal').style.display = "none";
+  $("#myModal").fadeOut(300);
 }
 
 var slideIndex = 1;
