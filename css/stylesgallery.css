@@ -155,9 +155,6 @@ html, body {
 }
 
 /*visdev style*/
-#gallery {
-    display: none;
-}
 .visdev {
     float: left;
     margin: auto;
