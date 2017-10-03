@@ -156,12 +156,12 @@ function showSlides(n, plus) {
       if (bool)
  {
      slides[i].style.display = 'none';
- }    else {$(slides[i]).fadeOut(300)};
+ }    else {$(slides[i]).fadeOut(200)};
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  $(slides[slideIndex-1]).fadeIn(300);
+  $(slides[slideIndex-1]).fadeIn(200);
   dots[slideIndex-1].className += " active";
 }
 </script>
