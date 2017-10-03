@@ -1,3 +1,19 @@
+/*animate it*/
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+    from ( opacity: 0; )
+    to ( opacity: 1; )
+}
+@keyframes fadeIn {
+    from ( opacity: 0; )
+    to (opacity: 1; )
+}
+
+
 /*navigation sidebar*/
 html, body {
     margin: 0;
@@ -91,6 +107,10 @@ li.dropdown {
 }
 
 
+#gallery {
+  text-align: center;
+}
+
 
 /*illustration masonry*/
 
@@ -155,6 +175,7 @@ html, body {
 }
 
 /*visdev style*/
+
 .visdev {
     float: left;
     margin: auto;
@@ -188,21 +209,17 @@ html, body {
     max-height:100%;
     text-align: center;
 }
-
-/*.w3-animate-zoom {animation:animatezoom 0.4s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}*/
-
-
 /*lightbox*/
 /* The Modal (background) */
 .modal {
     z-index: 100;
     float: left;
-    display:none;
+    display: none;
     text-align: center;
     margin:auto;
-    position:fixed;
+    position: fixed;
     width:100%;
-    height:100%;
+    height:100vh;
     overflow:auto;
     background-color:rgb(0,0,0);
     background-color:rgba(0,0,0,0.7);
@@ -213,14 +230,16 @@ html, body {
       -moz-transition: opacity 2000ms ease-in-out;
         -o-transition: opacity 2000ms ease-in-out;
            transition: opacity 2000ms ease-in-out;
-    position: absolute;
-    top: 0; bottom:0; left:0; right: 0;
-    margin: auto;
+display: block;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 /* The Close Button */
 .close {
-  z-index: 100;
+  z-index: 150;
   color: white;
   position: absolute;
   top: 10px;
@@ -238,7 +257,7 @@ html, body {
 
 /* Next & previous buttons */
 .prev, .next {
-    z-index:200;
+z-index:200;
   cursor: pointer;
   position: absolute;
   top: 50%;
