@@ -109,17 +109,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
 <!--fade in-->
-    <script>
+   <script>
  $(document).ready(function() {
       window.onload = function() {$('#gallery').hide().fadeIn(1000);};
     });
+   </script>
+   <script>
 //menu slide down-->
     $(function() {
     $("#dropdownitems").click(function(){
       $(".dropitems").slideToggle();
     });
 });
-//lightbox
+   </script>
+   <script>
+      //lightbox
 function onClick(element) {
   $("#myModal").fadeIn(300);
 }
