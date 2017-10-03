@@ -212,24 +212,28 @@ function closeModal() {
 }
 
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, false);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slideIndex += n, false);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(slideIndex = n, true);
 }
 
-function showSlides(n) {
+function showSlides(n, plus) {
+  var bool = plus;
   var i;
   var slides =  $(".mySlides");
   var dots = $(".mySlides");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    $(slides[i]).fadeOut(300);
+      if (bool)
+ {
+     slides[i].style.display = 'none';
+ }    else {$(slides[i]).fadeOut(300)};
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
