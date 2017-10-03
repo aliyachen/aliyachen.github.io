@@ -109,9 +109,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
 <!--fade in-->
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#gallery').fadeIn(300);
+    <script>
+ $(document).ready(function() {
+      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
     });
 </script>
    
