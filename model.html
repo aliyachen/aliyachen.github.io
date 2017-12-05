@@ -1,0 +1,144 @@
+<!DOCTTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aliya Chen | Visual Development</title>
+   <link rel="stylesheet" href="css/stylesgallery.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
+
+
+
+    
+</head>
+<nav>
+<ul id="nav">
+    <a href="index.html#top">
+        <img src="images/home.png" alt="Home Button" id="home">
+    </a>
+    <div class="navcontainer">
+    <li><a href="index.html#about">About</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn" id="dropdownitems">Art</a>
+        <ul>
+            <li class="dropitems"><a href="illustration.html">Illustration</a></li>
+            <li class="dropitems"><a href="design.html">Design</a></li>
+            <li class="dropitems"><a href="visdev.html">Visdev</a></li>
+            <li class="dropitems"><a href="model.html">3D Modeling</a></li>
+        </ul>
+    </li>
+    <li><a href="music.html">Piano Covers</a></li>
+    <li><a href="code.html">Code</a></li>
+     <!--<li><a href="contact.html">Contact</a></li>-->
+    </div>
+</ul>
+    
+<div class="links">
+       <a target="_blank" href="http://rokashii.tumblr.com/"><img src="images/tumblr.png" alt="tumblr" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
+        <a target="_blank" href="https://www.artstation.com/artist/aliyachen"><img src="images/artstation.png" alt="Artstation" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
+        <a target="_blank" href="https://www.instagram.com/chenalii/"><img src="images/instagram.png" alt="Instagram" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+            onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
+</div>
+</nav> 
+<body>
+    <div id="gallery">
+        <div id="img1" class="fade_img w3-container viscontainer visdev ">
+            <img src="images/model/env1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
+        </div>
+        <div id="img2" class="fade_img w3-container viscontainer visdev">
+            <img src="images/model/env2.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
+        </div>
+        <div id="img3" class="fade_img w3-container viscontainer visdev">
+            <img src="images/model/env3.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
+        </div>
+        <div id="img4" class="fade_img w3-container viscontainer visdev">
+            <img src="images/model/env4.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
+        </div>
+    </div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="modal-content w3-animate-zoom">
+       <div class="mySlides">
+            <img src="images/model/env1.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+        <div class="mySlides">
+            <img src="images/model/env2.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+               <div class="mySlides">
+            <img src="images/model/env3.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+        <div class="mySlides">
+            <img src="images/model/env4.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+    </div>
+</div>   
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+<!--fade in-->
+    <script>
+ $(document).ready(function() {
+      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
+    });
+</script>
+   
+ <!--menu slide down-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function() {
+    $("#dropdownitems").click(function(){
+      $(".dropitems").slideToggle();
+    });
+});
+</script>
+    
+<!--lightbox-->
+    <script>
+function onClick(element) {
+  $("#myModal").fadeIn(300);
+}
+
+function closeModal() {
+  $("#myModal").fadeOut(300);
+}
+
+var slideIndex = 1;
+showSlides(slideIndex, false);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n, false);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n, true);
+}
+
+function showSlides(n, plus) {
+  var bool = plus;
+  var i;
+  var slides =  $(".mySlides");
+  var dots = $(".mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      if (bool)
+ {
+     slides[i].style.display = 'none';
+ }    else {$(slides[i]).fadeOut(200)};
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  $(slides[slideIndex-1]).fadeIn(200);
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</html>
