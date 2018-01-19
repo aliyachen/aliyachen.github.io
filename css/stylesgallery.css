@@ -95,6 +95,12 @@ li.dropdown {
     display: block; 
 }
 
+.container {
+    padding: 0;
+    width: 80%;
+    float: left;
+}
+
 
 /*links at bottom*/
 .links {
