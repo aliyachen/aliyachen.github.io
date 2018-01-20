@@ -25,7 +25,7 @@
             <li class="dropitems"><a href="illustration.html">Illustration</a></li>
             <li class="dropitems"><a href="design.html">Design</a></li>
             <li class="dropitems"><a href="visdev.html">Visdev</a></li>
-           <li class="dropitems"><a href="model.html">3D Modeling</a></li>
+            <li class="dropitems"><a href="model.html">3D Modeling</a></li>
         </ul>
     </li>
     <li><a href="music.html">Piano Covers</a></li>
@@ -45,26 +45,29 @@
 </nav> 
 <body>
     <div id="gallery">
-        <div id="img1" class="w3-container viscontainer visdev">
+        <div id="img1" class="fade_img w3-container viscontainer visdev ">
             <img src="images/visdev/interior.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
         </div>
-        <div id="img2" class="w3-container viscontainer visdev">
+        <div id="img2" class="fade_img w3-container viscontainer visdev">
             <img src="images/visdev/prop.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
         </div>
-        <div id="img3" class="w3-container viscontainer visdev">
+        <div id="img3" class="fade_img w3-container viscontainer visdev">
             <img src="images/visdev/collapse.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
         </div>
-        <div id="img4" class="w3-container viscontainer visdev">
+        <div id="img4" class="fade_img w3-container viscontainer visdev">
             <img src="images/visdev/collapse1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
         </div>
-        <div id="img5" class="w3-container viscontainer visdev">
+        <div id="img5" class="fade_img w3-container viscontainer visdev">
             <img src="images/visdev/foxtwo.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(5)">
         </div>
-        <div id="img6" class="w3-container viscontainer visdev">
-            <img src="images/visdev/night1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
+        <div id="img6" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/chaexpression.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
         </div>
-        <div id="img7" class="w3-container viscontainer visdev">
-            <img src="images/visdev/afternoon1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
+        <div id="img7" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/night1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
+        </div>
+        <div id="img8" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/afternoon1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(8)">
         </div>
     </div>
 
@@ -89,6 +92,9 @@
         <div class="mySlides">
             <img src="images/visdev/foxtwo.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
         </div>
+        <div class="mySlides">
+            <img src="images/visdev/chaexpression.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
          <div class="mySlides">
             <img src="images/visdev/night1.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
         </div>
@@ -102,18 +108,23 @@
     
 <!--fade in-->
     <script>
-//  $(document).ready(function() {
-//       window.onload = function() {$('#gallery').hide().fadeIn(1000);};
-//     });
-//menu slide down
+ $(document).ready(function() {
+      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
+    });
+</script>
+   
+ <!--menu slide down-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
     $(function() {
     $("#dropdownitems").click(function(){
       $(".dropitems").slideToggle();
     });
 });
+</script>
     
-//lightbox
-
+<!--lightbox-->
+    <script>
 function onClick(element) {
   $("#myModal").fadeIn(300);
 }
