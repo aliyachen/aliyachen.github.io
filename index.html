@@ -141,10 +141,16 @@ $(document).ready(function(){
     
 <!--fade in-->
 <script> 
-    $(document).ready(function() {
-  $('.bgimage').on('webkitAnimationEnd', function(e) {
+$(document).ready(function() {
+  
+    $('.center-con').on('webkitAnimationEnd', function(e) {
     $(this).addClass('visible');
   });
+    
+    $('.bgimage').on('webkitAnimationEnd', function(e) {
+    $(this).addClass('visible');
+  });
+    
 });
 </script>
 </html>
