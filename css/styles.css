@@ -85,6 +85,15 @@ header {
     border-radius: 100%;
 }
 
+.round1 {
+    background-color: rgba(200, 200, 200, 0.5);
+    position: relative;
+    border: 1.5px solid #26292d;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
 .arrow {
     z-index: 500;
     height: 1.5px;
@@ -94,7 +103,16 @@ header {
     transition: 0.4s ease;
 }
 
-.arrow:first-child {
+.arrow1 {
+    z-index: 500;
+    height: 1.5px;
+    margin:0.5px;
+    width: 15px;
+    background: #26292d;
+    transition: 0.4s ease;
+}
+
+.arrow:first-child, .arrow1:first-child {
     display: block;
     position: absolute;
     transform: rotate(45deg);
@@ -102,7 +120,7 @@ header {
     bottom: 35%;
 }
 
-.arrow:nth-child(2) {
+.arrow:nth-child(2), .arrow1:nth-child(2) {
     display: block;
     position: absolute;
     transform: rotate(-45deg);
@@ -110,7 +128,7 @@ header {
     bottom: 35%;
 }
 
-.arrow:nth-child(3) {
+.arrow:nth-child(3), .arrow1:nth-child(3) {
     display: block;
     position: absolute;
     transform: rotate(45deg);
@@ -118,7 +136,7 @@ header {
     bottom: 54%;
 }
 
-.arrow:nth-child(4) {
+.arrow:nth-child(4), .arrow1:nth-child(4) {
     display: block;
     position: absolute;
     transform: rotate(-45deg);
@@ -126,22 +144,21 @@ header {
     bottom: 54%;
 }
 
-.round:hover span:nth-child(1) {
+.round:hover span:nth-child(1), .round1:hover span:nth-child(1)  {
     transform: rotate(-135deg);
 }
 
-.round:hover span:nth-child(2) {
+.round:hover span:nth-child(2), .round1:hover span:nth-child(2)  {
     transform: rotate(135deg);
 }
 
-.round:hover span:nth-child(3) {
+.round:hover span:nth-child(3), .round1:hover span:nth-child(3) {
     transform: rotate(225deg);
 }
 
-.round:hover span:nth-child(4) {
+.round:hover span:nth-child(4), .round1:hover span:nth-child(4) {
     transform: rotate(-225deg);
 }
-
 
 /*navigation sidebar*/
 html, body {
