@@ -58,6 +58,82 @@ header {
     font-size: 3vw; /*30px*/
 }
 
+/*scroll button*/
+.center-con {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.round {
+    background-color: rgba(51, 51, 51, 0.5);
+    position: relative;
+    border: 1.5px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.arrow {
+    z-index: 500;
+    height: 1.5px;
+    margin:0.5px;
+    width: 15px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.arrow:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+.arrow:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+.arrow:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+.arrow:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+}
+
+
 
 /*navigation sidebar*/
 html, body {
