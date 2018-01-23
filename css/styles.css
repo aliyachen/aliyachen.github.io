@@ -64,7 +64,16 @@ header {
     height: 8vh;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-delay: 0.2s;
 
+}
+.center-con.visible {
+  opacity: 1;
 }
 
 .round {
@@ -132,7 +141,6 @@ header {
 .round:hover span:nth-child(4) {
     transform: rotate(-225deg);
 }
-
 
 
 /*navigation sidebar*/
