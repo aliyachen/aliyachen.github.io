@@ -8,6 +8,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
 
+
+
+    
 </head>
 <nav>
 <ul id="nav">
@@ -20,6 +23,7 @@
         <a href="javascript:void(0)" class="dropbtn" id="dropdownitems">Art</a>
         <ul>
             <li class="dropitems"><a href="illustration.html">Illustration</a></li>
+            <li class="dropitems"><a href="design.html">Design</a></li>
             <li class="dropitems"><a href="visdev.html">Visdev</a></li>
             <li class="dropitems"><a href="model.html">3D Modeling</a></li>
         </ul>
@@ -40,29 +44,45 @@
 </nav> 
 <body>
     <div id="gallery">
-        <div id="img1" class="fade_img w3-container viscontainer visdev ">
-            <img src="images/visdev/interior.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
+	<div class="heading">
+            <h2 class="title">BOATHOUSE DESIGN</h2>
+        </div>
+	<div id="img1" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/boathouseinterior.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
         </div>
         <div id="img2" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/prop.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
+            <img src="images/visdev/boathouse1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
         </div>
         <div id="img3" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/collapse.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
+            <img src="images/visdev/boathouse2.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
         </div>
-        <div id="img4" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/collapse1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
+
+	<div class="heading">
+            <h2 class="title">TREEHOUSE DESIGN</h2>
+        </div>
+        <div id="img4" class="fade_img w3-container viscontainer visdev ">
+            <img src="images/visdev/interior.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
         </div>
         <div id="img5" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/foxtwo.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(5)">
+            <img src="images/visdev/prop.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(5)">
         </div>
         <div id="img6" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/chaexpression.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
+            <img src="images/visdev/collapse.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
         </div>
         <div id="img7" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/night1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
+            <img src="images/visdev/collapse1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
         </div>
         <div id="img8" class="fade_img w3-container viscontainer visdev">
-            <img src="images/visdev/afternoon1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(8)">
+            <img src="images/visdev/foxtwo.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(8)">
+        </div>
+        <div id="img9" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/chaexpression.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(9)">
+        </div>
+        <div id="img10" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/night1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(10)">
+        </div>
+        <div id="img11" class="fade_img w3-container viscontainer visdev">
+            <img src="images/visdev/afternoon1.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(11)">
         </div>
     </div>
 
@@ -72,13 +92,22 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     <div class="modal-content w3-animate-zoom">
-       <div class="mySlides">
+	<div class="mySlides">
+            <img src="images/visdev/boathouseinterior.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+	<div class="mySlides">
+            <img src="images/visdev/boathouse1.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+        <div class="mySlides">
+            <img src="images/visdev/boathouse2.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+        </div>
+       	<div class="mySlides">
             <img src="images/visdev/interior.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
         </div>
         <div class="mySlides">
             <img src="images/visdev/prop.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
         </div>
-               <div class="mySlides">
+        <div class="mySlides">
             <img src="images/visdev/collapse.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
         </div>
         <div class="mySlides">
