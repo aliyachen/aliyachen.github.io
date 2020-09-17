@@ -240,7 +240,7 @@ li.dropdown {
     margin-left: 8%;
     margin-top: 14%;
     padding: 0 2vw;
-    width: 7vw;
+    width: 15vw;
     display: inline-block;
 }
 #sig {
@@ -252,7 +252,7 @@ li.dropdown {
     margin-left:13%;
     overflow: hidden;
     background: white;
-    opacity: 0.85;
+    opacity: 1;
     display: block;
     position: absolute;
     margin-top: 100vh;
