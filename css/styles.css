@@ -51,10 +51,10 @@ header {
     width: 87%;
 }
 .myname{
-    font-size: 4vw; /*80px*/
+    font-size: 4.5em; /*80px*/
 }
 .subtitle{
-    font-size: 2vw; /*30px*/
+    font-size: 3em; /*30px*/
 }
 
 /*scroll button*/
