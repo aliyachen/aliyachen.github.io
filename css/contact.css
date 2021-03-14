@@ -6,6 +6,7 @@ html {
 html, body {
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
