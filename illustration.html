@@ -47,7 +47,7 @@
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
 </div>
 </nav> 
-<body class="animate-in">
+<body id = "page" class="animate-in">
     <div id="gallery" class="masonry galleryill">
 	<div class="item">
             <img src="images/illustration/l0b.jpg" style="cursor:pointer" onclick="onClick(this);currentSlide(1)">
@@ -494,6 +494,13 @@
 //      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
 //    });
 //    
+	    
+	
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#page').fadeIn(500);
+    });
+</script>
    
         
  <!--menu slide down-->
