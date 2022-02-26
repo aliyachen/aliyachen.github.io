@@ -215,9 +215,6 @@ li.dropdown {
   animation: lol 3s 500ms infinite ease-in-out;
 }
 
-#page {
-    display: none;
-}
 
 /* Add animation to "page content" */
 .animate-bottom {
@@ -239,6 +236,7 @@ li.dropdown {
 }
 
 #gallery {
+  display: none;
   text-align: center;
 }
 
