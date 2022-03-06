@@ -84,7 +84,6 @@ li a, .dropbtn {
   text-decoration: none;
   width: 100%;
 
-
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: darkgrey;
@@ -102,6 +101,7 @@ li.dropdown {
     text-align: center;
     position: relative;
     width: 100%;
+    text-transform:none;
 }
 
 .container {

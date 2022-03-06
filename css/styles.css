@@ -238,6 +238,7 @@ li.dropdown {
     text-align: center;
     position: relative;
     width: 100%;
+   text-transform:none;
 }
 
 /*about section*/
