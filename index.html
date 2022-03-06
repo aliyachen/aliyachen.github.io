@@ -10,6 +10,12 @@
   gtag('config', 'UA-149477840-1');
 </script>
 
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
+
+
+
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Aliya Chen</title>
@@ -38,23 +44,23 @@
 
 <a id="top"></a>
 <nav>
-
-<ul id="nav">
-    <a href="index#top">
+  <ul id="nav">
+    <a href="index.html#top">
         <img src="images/home.png" alt="Home Button" id="home">
     </a>
     <div class="navcontainer">
-    <li><a href="index#demoreel">Demo Reel</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#demoreel">Demo Reel</a></li>
     <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn" id="dropdownitems">Art</a>
         <ul>
-            <li class="dropitems"><a href="illustration">Illustration</a></li>
-            <li class="dropitems"><a href="visdev">Visdev</a></li>
-            <li class="dropitems"><a href="model">3D Modeling</a></li>
+            <li class="dropitems"><a href="illustration.html">Illustration</a></li>
+            <li class="dropitems"><a href="visdev.html">Visdev</a></li>
+            <li class="dropitems"><a href="model.html">3D Modeling</a></li>
         </ul>
     </li>
-    <li><a href="music">Piano Covers</a></li>
-    <li><a href="code">Code</a></li>
+    <li><a href="music.html">Piano Covers</a></li>
+    <li><a href="code.html">Code</a></li>
     <!-- <li><a href="contact.html">Contact</a></li>-->
     </div>
 </ul>
@@ -109,7 +115,7 @@
       </div>
 
 </body>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
 function fontResize(){
     var perc = parseInt($(window).width())/125;
@@ -150,30 +156,6 @@ $(document).ready(function(){
       });
     } // End if
   });
-});
-</script>
-
-<!--menu slide down-->
-<script>
-    $(function() {
-    $("#dropdownitems").click(function(){
-      $(".dropitems").slideToggle();
-    });
-});
-</script>
-
-<!--fade in-->
-<script>
-$(document).ready(function() {
-
-    $('.center-con').on('webkitAnimationEnd', function(e) {
-    $(this).addClass('visible');
-  });
-
-    $('.bgimage').on('webkitAnimationEnd', function(e) {
-    $(this).addClass('visible');
-  });
-
 });
 </script>
 </html>
