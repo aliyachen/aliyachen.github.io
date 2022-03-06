@@ -27,10 +27,12 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta Vaani', sans-serif;
     font-size: 16px;
 }
-
+h2,p,h4 {
+  font-weight: 500;
+}
 #home {
     display: block;
     margin: auto;
@@ -42,47 +44,51 @@ html, body {
     margin-top: 3vh;
 }
 #nav {
-    text-align: center;
-    font-size: 1vw;
-    width: 13%;
-    height: 100%;
-    position: fixed;
-    margin: 0px;
-    padding-left: 0px;
-    background-color: #26292d;
-    overflow: auto;
-    z-index: 1;
+  text-align: center;
+  font-size: 0.7vw;
+  font-weight: 500;
+  width: 13%;
+  height: 100vh;
+  position: fixed;
+  margin: 0px;
+  padding-left: 0px;
+  background-color: #26292d;
+  overflow: auto;
+  z-index: 1;
 }
 .dropitems {
     text-align: center;
     position: relative;
-    width: 100%; 
+    width: 100%;
 }
 ul li {
     list-style-type: none;
     position: relative;
-    display: inline; 
-    text-align: center; 
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    float: left; 
+    display: inline;
     text-align: center;
 }
 
-li a, .dropbtn { 
-    display: inline-block;
-    font-family: 'Lato', sans-serif;
-    color: lightgrey;
-    padding: 0.5vw 0vw;
-    text-decoration: none;
-    width: 100%;
-    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+      text-transform: uppercase;
+  float: left;
+  text-align: center;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  font-family: 'Mukta Vaani', sans-serif;
+  color: lightgrey;
+  letter-spacing: 0.3rem;
+  padding: 0.5vw 0vw;
+  text-decoration: none;
+  width: 100%;
+
+
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: darkgrey;
@@ -92,7 +98,7 @@ li.dropdown {
      font-family: 'Lato', sans-serif;
     color: darkgrey;
     text-decoration: none;
-    display: block; 
+    display: block;
 }
 
 .container {
@@ -113,7 +119,7 @@ li.dropdown {
 }
 .links img {
     height: 3vh;
-    padding: 1vh; 
+    padding: 1vh;
     margin: auto;
 }
 .links img.darkableImage {
@@ -226,12 +232,12 @@ li.dropdown {
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
+  from { bottom:-100px; opacity:0 }
   to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
 
@@ -254,7 +260,7 @@ html, body {
     float: left;
     margin-top: 1em;
     margin-left: 14%;
-    
+
     padding: 0;
     font-size: .85em;
 }
@@ -356,7 +362,7 @@ html, body {
     overflow:auto;
     background-color:rgb(0,0,0);
     background-color:rgba(0,0,0,0.9);
-    
+
 }
 .mySlides img {
         -webkit-transition: opacity 2000ms ease-in-out;
@@ -421,4 +427,3 @@ z-index:200;
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
