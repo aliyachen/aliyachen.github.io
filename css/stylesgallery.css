@@ -44,17 +44,17 @@ h2,p,h4 {
     margin-top: 3vh;
 }
 #nav {
-  text-align: center;
-  font-size: 0.7vw;
-  font-weight: 500;
-  width: 13%;
-  height: 100vh;
-  position: fixed;
-  margin: 0px;
-  padding-left: 0px;
-  background-color: #26292d;
-  overflow: auto;
-  z-index: 1;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 500;
+    width: 13%;
+    height: 100vh;
+    position: fixed;
+    margin: 0px;
+    padding-left: 0px;
+    background-color: #26292d;
+    overflow: auto;
+    z-index: 1;
 }
 
 ul li {
@@ -79,7 +79,7 @@ li a, .dropbtn {
   display: inline-block;
   font-family: 'Mukta Vaani', sans-serif;
   color: lightgrey;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2em;
   padding: 0.5vw 0vw;
   text-decoration: none;
   width: 100%;
@@ -404,7 +404,7 @@ z-index:200;
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 8px 16px;
+  padding: 5px 16px;
   margin-top: -50px;
   color: white;
   font-weight: bold;

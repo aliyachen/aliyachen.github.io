@@ -52,12 +52,12 @@ header {
 }
 .myname{
     font-size: 4em; /*80px*/
-    letter-spacing: 1.3rem;
+    letter-spacing: 0.6em;
     font-weight: 400;
 }
 .subtitle{
-    font-size: 1.7em; /*30px*/
-    letter-spacing: 0.4em;
+    font-size: 2.5em; /*30px*/
+    letter-spacing: 0.5em;
     margin-top:2.3em;
     font-weight: 300;
 }
@@ -184,7 +184,7 @@ html, body {
 }
 #nav {
     text-align: center;
-    font-size: 0.7vw;
+    font-size: 0.8vw;
     font-weight: 500;
     width: 13%;
     height: 100vh;
@@ -208,7 +208,7 @@ ul {
     padding: 0;
     width: 100%;
     overflow: hidden;
-        text-transform: uppercase;
+    text-transform: uppercase;
     float: left;
     text-align: center;
 }
@@ -217,7 +217,7 @@ li a, .dropbtn {
     display: inline-block;
     font-family: 'Mukta Vaani', sans-serif;
     color: lightgrey;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2em;
     padding: 0.5vw 0vw;
     text-decoration: none;
     width: 100%;
@@ -322,6 +322,7 @@ p.aboutsection {
 .aboutlinks img {
   height: 3vh;
   padding: 1vh;
+  padding-top: 5rem;
   margin: auto;
 }
 

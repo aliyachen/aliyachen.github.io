@@ -35,7 +35,7 @@ p1 {
 }
 #nav {
   text-align: center;
-  font-size: 0.7vw;
+  font-size: 0.8vw;
   font-weight: 500;
   width: 13%;
   height: 100vh;
@@ -68,7 +68,7 @@ li a, .dropbtn {
   display: inline-block;
   font-family: 'Mukta Vaani', sans-serif;
   color: lightgrey;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.1em;
   padding: 0.5vw 0vw;
   text-decoration: none;
   width: 100%;
