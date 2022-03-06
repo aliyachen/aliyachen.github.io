@@ -17,9 +17,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500&display=swap" rel="stylesheet">
 
 
-    
 </head>
 <nav>
 <ul id="nav">
@@ -41,16 +43,16 @@
     <!-- <li><a href="contact.html">Contact</a></li>-->
     </div>
 </ul>
-    
+
 <div class="links">
-       <a target="_blank" href="https://twitter.com/chenalii"><img src="images/twitter.png" alt="tumblr" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+       <a target="_blank" href="https://twitter.com/chenalii"><img src="images/twitter.png" alt="tumblr" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100"
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
-        <a target="_blank" href="https://www.artstation.com/artist/aliyachen"><img src="images/artstation.png" alt="Artstation" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+        <a target="_blank" href="https://www.artstation.com/artist/aliyachen"><img src="images/artstation.png" alt="Artstation" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100"
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
-        <a target="_blank" href="https://www.instagram.com/chenalii/"><img src="images/instagram.png" alt="Instagram" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100" 
+        <a target="_blank" href="https://www.instagram.com/chenalii/"><img src="images/instagram.png" alt="Instagram" class="darkableImage" onmouseout="this.style.opacity=1;this.filters.alpha.opacity=100"
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
 </div>
-</nav> 
+</nav>
 <body>
 
     <div id="gallery">
@@ -64,7 +66,7 @@
         <div id="img2" class="fade_img w3-container viscontainer visdev">
             <img src="images/model/plant2.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
         </div>
-        
+
         <div class="heading">
             <h2 class="title">SEXTANT MODEL</h2>
             <h4><i>Modeled in Maya, textured in Flow, rendered with Katana</i></h4>
@@ -75,7 +77,7 @@
         <div id="img4" class="fade_img w3-container viscontainer visdev">
             <img src="images/model/sextantclose.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
         </div>
-        
+
         <div class="heading">
             <h2 class="title">SCENE</h2>
             <h4><i>Modeled in Maya, textured in Flow, rigged and animated in Presto, lighting in Katana, effects in Houdini; concept art in Adobe Photoshop</i></h4>
@@ -86,7 +88,7 @@
         <div id="img6" class="fade_img w3-container viscontainer visdev">
             <img src="images/model/final.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
         </div>
-        
+
       <!--     <div class="heading">
             <h2 class="title">FIGURE MODEL</h2>
             <h4><i>Modeled and textured in Maya and ZBrush, rendered in Arnold - based on D'artagnan from BBC Musketeers</i></h4>
@@ -114,12 +116,12 @@
         <div id="img10" class="fade_img w3-container viscontainer visdev">
             <img src="images/model/31.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(12)">
         </div>
-        
+
         <div class="heading">
             <h2 class="title">TREEHOUSE INTERIOR</h2>
             <h4><i>Modeled and textured in Maya, rendered in Arnold - based on <a href="visdev.html" style="text-decoration:none; color:grey;"a>personal concept art</a></i></h4>
         </div>
-        
+
         <div id="img11" class="fade_img w3-container viscontainer visdev ">
             <img src="images/model/final1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(13)">
         </div>
@@ -133,7 +135,7 @@
 
 <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
-    
+
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     <div class="modal-content w3-animate-zoom">
@@ -183,10 +185,10 @@
             <img src="images/model/final4.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
         </div> -->
     </div>
-</div>   
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
+
 <!--
 fade in
     <script>
@@ -200,7 +202,7 @@ fade in
         $('#gallery').fadeIn(500);
     });
 </script>
-   
+
  <!--menu slide down-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
@@ -210,7 +212,7 @@ fade in
     });
 });
 </script>
-    
+
 <!--lightbox-->
     <script>
 function onClick(element) {
@@ -252,5 +254,5 @@ function showSlides(n, plus) {
   dots[slideIndex-1].className += " active";
 }
 </script>
-    
+
 </html>
