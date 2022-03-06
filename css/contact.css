@@ -2,15 +2,27 @@ html {
     padding: 0px;
 }
 
-/*navigation sidebar*/
 html, body {
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Mukta Vaani', sans-serif;
     font-size: 16px;
 }
+h2 {
+  font-weight: 500;
+}
+p,h4{
+  font-weight:300;
+}
 
+p1 {
+    float: left;
+    margin-top: 1vh;
+    padding: 0.5vh;
+    width: 100%;
+    font-weight:300;
+    font-size: 1.5vh;
+}
 #home {
     display: block;
     margin: auto;
@@ -22,48 +34,50 @@ html, body {
     margin-top: 3vh;
 }
 #nav {
-    text-align: center;
-    font-size: 1vw;
-    width: 13%;
-    height: 100vh;
-    position: fixed;
-    margin: 0px;
-    padding-left: 0px;
-    background-color: #26292d;
-    overflow: auto;
-    z-index: 1;
+  text-align: center;
+  font-size: 0.7vw;
+  font-weight: 500;
+  width: 13%;
+  height: 100vh;
+  position: fixed;
+  margin: 0px;
+  padding-left: 0px;
+  background-color: #26292d;
+  overflow: auto;
+  z-index: 1;
 }
 .dropitems {
-    display: none;
     text-align: center;
     position: relative;
-    width: 100%; 
+    width: 100%;
 }
 ul li {
     list-style-type: none;
     position: relative;
-    display: inline; 
-    text-align: center; 
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
-    float: left; 
+    display: inline;
     text-align: center;
 }
 
-li a, .dropbtn { 
-    display: inline-block;
-    font-family: 'Lato', sans-serif;
-    color: lightgrey;
-    padding: 0.5vw 0vw;
-    text-decoration: none;
-    width: 100%;
-    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+      text-transform: uppercase;
+  float: left;
+  text-align: center;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  font-family: 'Mukta Vaani', sans-serif;
+  color: lightgrey;
+  letter-spacing: 0.3rem;
+  padding: 0.5vw 0vw;
+  text-decoration: none;
+  width: 100%;
+
 }
 li a:hover, .dropdown:hover .dropbtn {
     color: darkgrey;
@@ -73,7 +87,7 @@ li.dropdown {
      font-family: 'Lato', sans-serif;
     color: darkgrey;
     text-decoration: none;
-    display: block; 
+    display: block;
 }
 
 
@@ -89,7 +103,7 @@ li.dropdown {
 }
 .links img {
     height: 3vh;
-    padding: 1vh; 
+    padding: 1vh;
     margin: auto;
 }
 .links img.darkableImage {
@@ -140,7 +154,7 @@ input[type=submit]:hover {
     padding: 0;
     width: 70%;
     float: left;
-    margin-left: 20.5%; 
+    margin-left: 20.5%;
 }
 .fade {
         animation:opac 0.5s}@keyframes opac{from{opacity:0} to{opacity:1}
@@ -190,14 +204,7 @@ audio {
     padding: 0.5vw;
     width: 100%;
     display: inline-block;
-    margin-bottom: 5vh;
-}
-p1 {
-    float: left;
-    margin-top: 1vh;
-    padding: 0.5vh; 
-    width: 100%;
-    font-size: 1.9vh;
+    margin-bottom: 3vh;
 }
 .first {
     margin-top: 8vh;
