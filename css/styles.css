@@ -40,7 +40,7 @@
 
 /*title*/
 header {
-    font-family: 'Mukta Vaani', sans-serif;
+    font-family: 'Alegraya Sans', sans-serif;
     z-index: 3;
     float: left;
     text-align: center;
@@ -51,15 +51,15 @@ header {
     width: 87%;
 }
 .myname{
-    font-size: 4em; /*80px*/
-    letter-spacing: 0.6em;
-    font-weight: 400;
+    font-size: 3.8em; /*80px*/
+    letter-spacing: 0.2em;
+    font-weight: 100;
 }
 .subtitle{
-    font-size: 2.5em; /*30px*/
-    letter-spacing: 0.5em;
+    font-size: 2.3em; /*30px*/
+    letter-spacing: 0.4em;
     margin-top:2.3em;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 /*scroll button*/
