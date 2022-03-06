@@ -46,11 +46,6 @@ p1 {
   overflow: auto;
   z-index: 1;
 }
-.dropitems {
-    text-align: center;
-    position: relative;
-    width: 100%;
-}
 ul li {
     list-style-type: none;
     position: relative;
@@ -89,7 +84,12 @@ li.dropdown {
     text-decoration: none;
     display: block;
 }
-
+.dropitems {
+    display: none;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
 
 
 /*links at bottom*/
