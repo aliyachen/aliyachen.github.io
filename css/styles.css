@@ -60,10 +60,9 @@ header {
     z-index: 3;
     float: left;
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 35vh;
     margin-left: 13%;
     color: white;
-    line-height: 2px;
     width: 87%;
 }
 .myname{
@@ -74,8 +73,8 @@ header {
 .subtitle{
     font-size: 2rem; /*30px*/
     letter-spacing: 0.5rem;
-    margin-top:2.3em;
     font-weight: 100;
+    margin-top:-3rem;
     text-transform: uppercase;
 }
 
