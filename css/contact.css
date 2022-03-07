@@ -207,9 +207,9 @@ audio {
     display: inline-block;
     margin-bottom: 3vh;
 }
-.first {
+/* .first {
     margin-top: 8vh;
-}
+} */
 .last {
     margin-bottom: 15vh;
 }
