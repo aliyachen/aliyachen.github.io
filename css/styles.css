@@ -314,6 +314,7 @@ li.dropdown {
     width: 55%;
     margin-left: 18vw;
     margin-right: 12vw;
+    margin-bottom: 4rem;
 }
 h1.aboutsection {
     margin: auto;
@@ -341,8 +342,8 @@ p.aboutsection {
 
 .aboutlinks i {
   height: 3vh;
-  margin:1rem;
-  margin-top:3rem;
+  margin-left:1rem;
+  margin-right:1rem;
   font-size: 1.8rem;
   color: #4B4B4B;
 }
