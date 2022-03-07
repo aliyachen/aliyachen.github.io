@@ -21,7 +21,7 @@ p1 {
     padding: 0.5vh;
     width: 100%;
     font-weight:300;
-    font-size: 1.5vh;
+    font-size: 1rem;
 }
 #home {
     display: block;
@@ -32,6 +32,7 @@ p1 {
 }
 .navcontainer {
     margin-top: 3vh;
+      padding-bottom:5rem;
 }
 #nav {
   text-align: center;

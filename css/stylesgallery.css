@@ -42,6 +42,7 @@ h2,p,h4 {
 }
 .navcontainer {
     margin-top: 3vh;
+    padding-bottom:5rem;
 }
 #nav {
     text-align: center;

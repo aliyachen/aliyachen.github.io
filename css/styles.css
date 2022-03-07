@@ -7,9 +7,25 @@
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
+.fa-custom-twtr:before {
+        content: "\f099";
+}
+
+.fa-custom-insta:before {
+        content: "\f16d";
+}
+.fa-custom-lkin:before {
+        content: "\f08c";
+}
+.fa-custom-web:before {
+        content: "\f77a";
+}
+.fa-custom-artstation:before {
+content: "\f2ed";
+}
 
 .bgimage {
-    background-image: url(endings.jpg);
+    background-image: url(cover_l0.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -40,7 +56,7 @@
 
 /*title*/
 header {
-    font-family: 'Alegraya Sans', sans-serif;
+    font-family: 'Mukta Vaani', sans-serif;
     z-index: 3;
     float: left;
     text-align: center;
@@ -51,15 +67,16 @@ header {
     width: 87%;
 }
 .myname{
-    font-size: 3.8em; /*80px*/
-    letter-spacing: 0.2em;
-    font-weight: 100;
+    font-size: 4rem; /*80px*/
+    letter-spacing: 0.7rem;
+    font-weight: 200;
 }
 .subtitle{
-    font-size: 2.3em; /*30px*/
-    letter-spacing: 0.4em;
+    font-size: 2rem; /*30px*/
+    letter-spacing: 0.5rem;
     margin-top:2.3em;
-    font-weight: 500;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 
 /*scroll button*/
@@ -181,6 +198,7 @@ html, body {
 }
 .navcontainer {
     margin-top: 3vh;
+    padding-bottom:5rem;
 }
 #nav {
     text-align: center;
@@ -292,7 +310,7 @@ li.dropdown {
 
 .aboutsection {
     margin-top: 16%;
-    width: 80%;
+    width: 40%;
     margin-left: 18vw;
     margin-right: 12vw;
 }
@@ -308,7 +326,7 @@ p.aboutsection {
     margin: auto;
     margin-bottom: 1vw;
     width: auto;
-    font-size: 1.4vh;
+    font-size: 1rem;
     line-height: 3vh;
 }
 
@@ -318,6 +336,15 @@ p.aboutsection {
   width: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.aboutlinks i {
+  height: 3vh;
+  padding: 1vh;
+  padding-top: 5rem;
+  margin: auto;
+  font-size: 1.5rem;
+  color: #4B4B4B;
 }
 .aboutlinks img {
   height: 3vh;
