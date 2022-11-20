@@ -21,7 +21,10 @@
         content: "\f77a";
 }
 .fa-custom-artstation:before {
-content: "\f2ed";
+        content: "\f2ed";
+}
+.fa-custom-tumblr:before {
+        content: "\f173";
 }
 
 .bgimage {
