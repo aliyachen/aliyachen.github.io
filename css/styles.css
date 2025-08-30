@@ -253,7 +253,7 @@ li.dropdown {
     text-decoration: none;
     display: block;
 }
-.dropitems {
+.dropitems, .dropitems2 {
     display: none;
     text-align: center;
     position: relative;
