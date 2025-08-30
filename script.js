@@ -24,10 +24,16 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-$("#dropdownitems").click(function(){
-	$(".dropitems").slideToggle();
+    $("#dropdownitems").click(function(){
+	   $(".dropitems").slideToggle();
+    });
+    $("#dropdownitems2").click(function(){
+	   $(".dropitems2").slideToggle();
+    });
+    
 });
-});
+
+
 //------------------------------------MODAL SCRIPTS------------------------------------
 //detect click outside of modal; if so, close modal
 $(document).click(function(e){
