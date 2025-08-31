@@ -31,8 +31,38 @@ p1 {
     padding-bottom: 0px;
 }
 .navcontainer {
-    margin-top: 3vh;
-      padding-bottom:5rem;
+    margin-top: 2vh;
+    padding-bottom:5rem;
+ 
+}
+#nav {
+    text-align: center;
+    font-size: 0.7vw;
+    font-weight: 500;
+    width: 13%;
+    height: 100vh;
+    position: fixed;
+    margin: 0px;
+    padding-left: 0px;
+    background-color: #26292d;
+    overflow: auto;
+    z-index: 1;
+}
+
+
+
+/*navigation sidebar*/
+#home {
+    display: block;
+    margin: auto;
+    width: 55%;
+    margin-top: 18vh;
+    padding-bottom: 0px;
+}
+.navcontainer {
+    margin-top: 2vh;
+    padding-bottom:5rem;
+ 
 }
 #nav {
     text-align: center;
