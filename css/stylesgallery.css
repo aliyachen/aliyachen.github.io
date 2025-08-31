@@ -16,6 +16,7 @@
 /* headings */
 .title {
     margin-top: 30px;
+    margin-bottom: 0;
 }
 .heading {
     padding: 0;
@@ -33,6 +34,7 @@ html, body {
 }
 h2,p,h4 {
   font-weight: 500;
+  margin-top: 0;
 }
 #home {
     display: block;
