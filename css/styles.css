@@ -243,7 +243,7 @@ li a, .dropbtn {
     width: 100%;
 
 }
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn:hover {
     color: darkgrey;
 }
 li.dropdown {
