@@ -262,6 +262,10 @@ li.dropdown {
    text-transform:none;
 }
 
+.dropitems a, .dropitems2 a  {
+  padding-top: 0;
+}
+
 /*about section*/
 .sig {
     float: left;
