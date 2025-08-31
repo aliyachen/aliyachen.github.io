@@ -19,9 +19,10 @@
 }
 .heading {
     padding: 0;
-    text-align: left;
+    padding-left: 13%;
+    text-align: center;
     float: right;
-    width: 79%;
+    width: 87%;
 }
 /*navigation sidebar*/
 html, body {
@@ -37,12 +38,13 @@ h2,p,h4 {
     display: block;
     margin: auto;
     width: 55%;
-    margin-top: 22vh;
+    margin-top: 18vh;
     padding-bottom: 0px;
 }
 .navcontainer {
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding-bottom:5rem;
+ 
 }
 #nav {
     text-align: center;
@@ -85,7 +87,7 @@ li a, .dropbtn {
     width: 100%;
 
 }
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover, .dropbtn:hover {
     color: darkgrey;
 }
 li.dropdown {
@@ -95,14 +97,7 @@ li.dropdown {
     text-decoration: none;
     display: block;
 }
-.dropitems, .dropitems2 {
-    /* display: none; */
-    text-align: center;
-    position: relative;
-    width: 100%;
-        font-weight:200;
-   text-transform:none;
-}
+
 
 .container {
     padding: 0;
