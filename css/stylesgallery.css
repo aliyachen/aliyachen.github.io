@@ -341,17 +341,15 @@ html, body {
 /*visdev style*/
 
 .visdev {
-    float: center;
-    margin-left: 16%;
+    float: left;
+    margin: auto;
+    margin-left: 13%;
     display: block;
     cursor: pointer;
     height: auto;
     transition: 0.3s;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 65%;
-  
-  
 }
 
 /*modal*/
