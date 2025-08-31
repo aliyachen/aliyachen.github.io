@@ -25,10 +25,16 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("#dropdownitems").click(function(){
-	   $(".dropitems").slideToggle();
+        $(".dropitems").slideToggle();
+        if ($(".dropitems2").is(':visible')) {
+            $(".dropitems2").slideToggle();
+        }
     });
     $("#dropdownitems2").click(function(){
-	   $(".dropitems2").slideToggle();
+        $(".dropitems2").slideToggle();
+        if ($(".dropitems").is(':visible')) {
+            $(".dropitems").slideToggle();
+        }
     });
     
 });
