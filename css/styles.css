@@ -190,17 +190,17 @@ html, body {
     font-family: 'Mukta Vaani', sans-serif;
     font-size: 16px;
 }
-
 #home {
     display: block;
     margin: auto;
     width: 55%;
-    margin-top: 22vh;
+    margin-top: 18vh;
     padding-bottom: 0px;
 }
 .navcontainer {
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding-bottom:5rem;
+ 
 }
 #nav {
     text-align: center;
