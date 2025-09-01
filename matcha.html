@@ -22,7 +22,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Aliya Chen | Blood Sweat & Tears</title>
    <link rel="stylesheet" href="css/stylesgallery.css">
-	<link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/worknav.css">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,36 +57,36 @@
         <div id="img7" class="fade_img w3-container viscontainer visdev">
             <img src="images/matcha/matcha-statues0.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
         </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
 
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <div class="modal-content w3-animate-zoom">
-	    <div class="mySlides">
-            <img src="images/matcha/matcha_battle2b.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/matcha/matcha_remembrance_orgy_2.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/matcha/matcha_remembrance_orgy_3.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/matcha/matcha-drakehounds.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/matcha/matcha-env-ideas_.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/matcha/matcha-statues.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/matcha/matcha-statues0.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="modal-content w3-animate-zoom">
+            <div class="mySlides">
+                <img src="images/matcha/matcha_battle2b.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
+            <div class="mySlides">
+                <img src="images/matcha/matcha_remembrance_orgy_2.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
+            <div class="mySlides">
+                <img src="images/matcha/matcha_remembrance_orgy_3.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
+            <div class="mySlides">
+                <img src="images/matcha/matcha-drakehounds.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
+            <div class="mySlides">
+                <img src="images/matcha/matcha-env-ideas_.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
+            <div class="mySlides">
+                <img src="images/matcha/matcha-statues.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
+            <div class="mySlides">
+                <img src="images/matcha/matcha-statues0.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+            </div>
         </div>
     </div>
-</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -114,46 +114,5 @@ fade in
 });
 </script>
 
-<!--lightbox-->
-    <script>
-function onClick(element) {
-  $("#myModal").fadeIn(300);
-}
-
-function closeModal() {
-  $("#myModal").fadeOut(300);
-}
-
-var slideIndex = 1;
-showSlides(slideIndex, false);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n, false);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n, true);
-}
-
-function showSlides(n, plus) {
-  var bool = plus;
-  var i;
-  var slides =  $(".mySlides");
-  var dots = $(".mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      if (bool)
- {
-     slides[i].style.display = 'none';
- }    else {$(slides[i]).fadeOut(200)};
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  $(slides[slideIndex-1]).fadeIn(200);
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 </html>
