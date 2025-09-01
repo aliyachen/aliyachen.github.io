@@ -54,7 +54,7 @@ $(document).click(function(e){
     }
     else if (elementClassName == "modal" && opacity==1) {
       closeModal();
-    };
+    }
     //alert(elementClassName); check class name
 });
 //arrow keys simulate next and prev
