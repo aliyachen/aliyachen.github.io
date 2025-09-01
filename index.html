@@ -14,13 +14,11 @@
 <script src="jquery-3.2.1.min.js"></script>
 <script src="script.js"></script>
     
-<!--
 <script>
   $(function(){
       $("#navigationplaceholder").load("nav.html");
   });
 </script> 
--->
 
 
 
@@ -53,6 +51,7 @@
 
 <a id="top"></a>
     
+<!--
 <nav>
   <ul id="nav">
     <a href="index.html#top">
@@ -91,10 +90,11 @@
             onmouseover="this.style.opacity=0.6;this.filters.alpha.opacity=60" ></a>
 </div>
 </nav>
+-->
 
     <!--bg image-->
 <div class="bgimage"></div>
-<!--<div id = "navigationplaceholder"></div>-->
+<div id = "navigationplaceholder"></div>
 <body>
 
     <div class="wrap">
@@ -161,13 +161,15 @@ $(window).resize(function () {
 });
     </script>
 
+<!--
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+      console.log(this.hash);
+    if (this.hash !== "" && document.URL.includes("index")) {
       // Prevent default anchor click behavior
       event.preventDefault();
 
@@ -187,4 +189,5 @@ $(document).ready(function(){
   });
 });
 </script>
+-->
 </html>
