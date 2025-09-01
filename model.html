@@ -35,138 +35,139 @@
 </head>
 <div id = "navigationplaceholder"></div>
 <body>
+    <div id="contentnotnav">
+        <div id="gallery">
+            <div class="heading">
+                <h2 class="title">Succulents Model</h2>
+                <h4>Modeled in Maya, textured in Flow, rendered with Katana</h4>
+            </div>
+            <div id="img1" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/plant.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
+            </div>
+            <div id="img2" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/plant2.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
+            </div>
 
-    <div id="gallery">
-        <div class="heading">
-            <h2 class="title">Succulents Model</h2>
-            <h4>Modeled in Maya, textured in Flow, rendered with Katana</h4>
-        </div>
-        <div id="img1" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/plant.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
-        </div>
-        <div id="img2" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/plant2.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
+            <div class="heading">
+                <h2 class="title">Sextant Model</h2>
+                <h4>Modeled in Maya, textured in Flow, rendered with Katana</h4>
+            </div>
+            <div id="img3" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/sextant.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
+            </div>
+            <div id="img4" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/sextantclose.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
+            </div>
+
+            <div class="heading">
+                <h2 class="title">Scene</h2>
+                <h4>Modeled in Maya, textured in Flow, rigged/animated in Presto, lighting in Katana, effects in Houdini, concept art in Adobe Photoshop</h4>
+            </div>
+            <div id="img5" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/PUPlight.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(5)">
+            </div>
+            <div id="img6" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/final.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
+            </div>
+
+          <!--     <div class="heading">
+                <h2 class="title">FIGURE MODEL</h2>
+                <h4><i>Modeled and textured in Maya and ZBrush, rendered in Arnold - based on D'artagnan from BBC Musketeers</i></h4>
+            </div>
+            <div id="img7" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/dartagnan1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
+            </div>
+            <div id="img8" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/dartagnan2.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(8)">
+            </div>
+
+          <div class="heading">
+                <h2 class="title">CHARACTER MODEL</h2>
+                <h4><i>Modeled and textured in Maya, rendered in Arnold - based on <a href="visdev.html" style="text-decoration:none; color:grey;">personal concept art</a></i></h4>
+            </div>
+            <div id="img7" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/0.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(9)">
+            </div>
+            <div id="img8" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(10)">
+            </div>
+            <div id="img9" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/21.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(11)">
+            </div>
+            <div id="img10" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/31.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(12)">
+            </div>
+
+            <div class="heading">
+                <h2 class="title">TREEHOUSE INTERIOR</h2>
+                <h4><i>Modeled and textured in Maya, rendered in Arnold - based on <a href="visdev.html" style="text-decoration:none; color:grey;"a>personal concept art</a></i></h4>
+            </div>
+
+            <div id="img11" class="fade_img w3-container viscontainer visdev ">
+                <img src="images/model/final1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(13)">
+            </div>
+            <div id="img12" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/final2.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(14)">
+            </div>
+            <div id="img13" class="fade_img w3-container viscontainer visdev">
+                <img src="images/model/final4.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(15)">
+            </div> -->
         </div>
 
-        <div class="heading">
-            <h2 class="title">Sextant Model</h2>
-            <h4>Modeled in Maya, textured in Flow, rendered with Katana</h4>
-        </div>
-        <div id="img3" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/sextant.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(3)">
-        </div>
-        <div id="img4" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/sextantclose.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(4)">
-        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
 
-        <div class="heading">
-            <h2 class="title">Scene</h2>
-            <h4>Modeled in Maya, textured in Flow, rigged/animated in Presto, lighting in Katana, effects in Houdini, concept art in Adobe Photoshop</h4>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="modal-content w3-animate-zoom">
+                <div class="mySlides">
+                    <img src="images/model/plant.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/plant2.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/sextant.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/sextantclose.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+               <div class="mySlides">
+                    <img src="images/model/PUPlight.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/final.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+        <!--          <div class="mySlides">
+                    <img src="images/model/dartagnan1.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/dartagnan2.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+               <div class="mySlides">
+                    <img src="images/model/0.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/1.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/21.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/31.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+               <div class="mySlides">
+                    <img src="images/model/final1.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/model/final2.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                 <div class="mySlides">
+                    <img src="images/model/final4.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div> -->
+            </div>
         </div>
-        <div id="img5" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/PUPlight.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(5)">
-        </div>
-        <div id="img6" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/final.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(6)">
-        </div>
-
-      <!--     <div class="heading">
-            <h2 class="title">FIGURE MODEL</h2>
-            <h4><i>Modeled and textured in Maya and ZBrush, rendered in Arnold - based on D'artagnan from BBC Musketeers</i></h4>
-        </div>
-        <div id="img7" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/dartagnan1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(7)">
-        </div>
-        <div id="img8" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/dartagnan2.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(8)">
-        </div>
-
-      <div class="heading">
-            <h2 class="title">CHARACTER MODEL</h2>
-            <h4><i>Modeled and textured in Maya, rendered in Arnold - based on <a href="visdev.html" style="text-decoration:none; color:grey;">personal concept art</a></i></h4>
-        </div>
-        <div id="img7" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/0.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(9)">
-        </div>
-        <div id="img8" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(10)">
-        </div>
-        <div id="img9" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/21.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(11)">
-        </div>
-        <div id="img10" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/31.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(12)">
-        </div>
-
-        <div class="heading">
-            <h2 class="title">TREEHOUSE INTERIOR</h2>
-            <h4><i>Modeled and textured in Maya, rendered in Arnold - based on <a href="visdev.html" style="text-decoration:none; color:grey;"a>personal concept art</a></i></h4>
-        </div>
-
-        <div id="img11" class="fade_img w3-container viscontainer visdev ">
-            <img src="images/model/final1.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(13)">
-        </div>
-        <div id="img12" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/final2.png" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(14)">
-        </div>
-        <div id="img13" class="fade_img w3-container viscontainer visdev">
-            <img src="images/model/final4.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(15)">
-        </div> -->
     </div>
-
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    <div class="modal-content w3-animate-zoom">
-        <div class="mySlides">
-            <img src="images/model/plant.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/plant2.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/sextant.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/sextantclose.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-       <div class="mySlides">
-            <img src="images/model/PUPlight.png" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/final.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-<!--          <div class="mySlides">
-            <img src="images/model/dartagnan1.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/dartagnan2.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-       <div class="mySlides">
-            <img src="images/model/0.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/1.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/21.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/31.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-       <div class="mySlides">
-            <img src="images/model/final1.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-        <div class="mySlides">
-            <img src="images/model/final2.png"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div>
-         <div class="mySlides">
-            <img src="images/model/final4.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
-        </div> -->
-    </div>
-</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
