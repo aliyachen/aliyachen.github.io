@@ -183,13 +183,43 @@ header {
     transform: rotate(-225deg);
 }
 
-/*navigation sidebar*/
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Mukta Vaani', sans-serif;
     font-size: 16px;
 }
+
+h2 {
+  font-weight: 500;
+}
+p,h4{
+  font-weight:300;
+}
+
+p1 {
+    float: left;
+    margin-top: 1vh;
+    padding: 0.5vh;
+    width: 100%;
+    font-weight:300;
+    font-size: 1rem;
+}
+.heading {
+    padding: 0;
+    text-align: left;
+    float: right;
+    width: 79%;
+}
+.heading1 {
+    padding: 0;
+    text-align: left;
+    float: right;
+    width: 79%;
+}
+
+
+/*navigation sidebar*/
 #home {
     display: block;
     margin: auto;
@@ -264,6 +294,35 @@ li.dropdown {
 
 .dropitems a, .dropitems2 a  {
   padding-top: 0;
+}
+
+.title {
+    margin-top: 30px;
+}
+
+/*music*/
+#page {
+    display: none;
+}
+.container {
+    padding: 0;
+    width: 70%;
+    float: left;
+    margin-left: 20.5%;
+}
+audio {
+    float: left;
+    margin: auto;
+    padding: 0.5vw;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 3vh;
+}
+/* .first {
+    margin-top: 8vh;
+} */
+.last {
+    margin-bottom: 15vh;
 }
 
 /*about section*/
@@ -347,7 +406,7 @@ p.aboutsection {
 }
 
 .aboutlinks i {
-  height: 3vh;
+  height: -18vh;
   margin-left:1rem;
   margin-right:1rem;
   font-size: 1.8rem;
