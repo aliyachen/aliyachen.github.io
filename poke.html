@@ -23,7 +23,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Aliya Chen | Pokémon</title>
    <link rel="stylesheet" href="css/stylesgallery.css">
-	<link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/worknav.css">
     
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
@@ -119,55 +119,11 @@
 //      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
 //    });
 //
-
-
-
  <!--menu slide down-->
     $(function() {
     $("#dropdownitems").click(function(){
       $(".dropitems").slideToggle();
     });
 });
-
-<!--lightbox-->
-
-function onClick(element) {
-   $("#myModal").fadeIn(300);
-}
-
-function closeModal() {
-    $("#myModal").fadeOut(300);
-}
-
-var slideIndex = 1;
-showSlides(slideIndex, false);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n, false);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n, true);
-}
-
-function showSlides(n, plus) {
-  var bool = plus;
-  var i;
-  var slides =  $(".mySlides");
-  var dots = $(".mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      if (bool)
- {
-     slides[i].style.display = 'none';
- }    else {$(slides[i]).fadeOut(200)};
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  $(slides[slideIndex-1]).fadeIn(200);
-  dots[slideIndex-1].className += " active";
-}
 </script>
 </html>
