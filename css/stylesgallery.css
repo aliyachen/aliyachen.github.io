@@ -190,9 +190,10 @@ h2,p,h4 {
 
 /*illustration masonry*/
 .masonry {
-  margin: 1em;
-  padding: 0;
+  margin-top: 1em;
   font-size: .85em;
+  display: block;
+  padding:0.01vw 1vw;
 }
 
 .item {
