@@ -184,7 +184,6 @@ h2,p,h4 {
 #gallery {
   display: none;
   text-align: center;
-  /*width: fit-content;*/
   width: 100%;
 }
 
@@ -251,7 +250,7 @@ h2,p,h4 {
 
 @media only screen and (width >= 1024px) {
   .pokecontainer {
-    --gallery-items-per-row: 4;
+    --gallery-items-per-row: 5;
   }
 }
 
