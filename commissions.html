@@ -1,0 +1,97 @@
+<!DOCTTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" type="image/png" href="https://aliyachen.com/images/favicon.png"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-149477840-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-149477840-1');
+</script>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
+<script>
+  $(function(){
+      $("#navigationplaceholder").load("nav.html");
+  });
+</script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Aliya Chen | Commissions</title>
+   <link rel="stylesheet" href="css/stylesgallery.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/worknav.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100|Lato:300|Raleway:300|Roboto:300,400|Work+Sans:300,400" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+
+</head>
+<div id = "navigationplaceholder"></div>
+<body>
+    <div id="gallery">
+        <div id="contentnotnav">
+            <div class="heading">
+                <h2 class="title">Hypergryph (2025)</h2>
+                <h4>Promotional illustration for Arknights: Endfield</h4>
+            </div>
+            <div id="img1" class="fade_img w3-container viscontainer visdev">
+                <img src="images/illustration/endfield.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(1)">
+            </div>
+            <div class="heading">
+                <h2 class="title">Studio Chizu/Pixiv (2021)</h2>
+                <h4>Commission to celebrate the release of BELLE</h4>
+            </div>
+            <div id="img2" class="fade_img w3-container viscontainer visdev">
+                <img src="images/illustration/belle.jpg" style="width:100%;cursor:pointer" onclick="onClick(this);currentSlide(2)">
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="modal-content w3-animate-zoom">
+                <div class="mySlides">
+                    <img src="images/illustration/ark_endfield.jpg" style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+                <div class="mySlides">
+                    <img src="images/illustration/belle.jpg"  style="max-height:100%; max-width:100%; height:auto; width:auto;">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--
+fade in
+    <script>
+ $(document).ready(function() {
+      window.onload = function() {$('#gallery').hide().fadeIn(1000);};
+    });
+</script>
+-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#gallery').fadeIn(500);
+    });
+</script>
+
+ <!--menu slide down-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(function() {
+    $("#dropdownitems").click(function(){
+      $(".dropitems").slideToggle();
+    });
+});
+</script>
+</html>
