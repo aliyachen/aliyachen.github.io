@@ -181,6 +181,18 @@ h2,p,h4 {
   to{ bottom:0; opacity:1 }
 }
 
+/*miss christine*/
+.christinerow {
+  width: 82%;
+  display: inline-block;
+}
+.christinecolumn {
+  float: left;
+  width: 49.5%;
+}
+
+
+
 #gallery {
   display: none;
   text-align: center;
